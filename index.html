@@ -1,0 +1,77 @@
+<html>
+<head>
+	<title>Galactose test</title>
+</head>
+<script>
+function myf(){
+  let x,y,z,a,b,c;
+  x=document.getElementById("f").value;
+  y=document.getElementById("r").value;
+  z=document.getElementById("n").value;
+  a=document.getElementById("h").value;
+  b=document.getElementById("e").value;
+  c=document.getElementById("d").value;
+  
+  
+  
+  
+  if(x== "positive" && y=="negative" && z=="positive" && a=="positive" && b=="positive" && c=="negative"){
+  	document.getElementById("t").innerHTML="Galactose is present";
+}else{
+	
+	document.getElementById("t").innerHTML="Galactose is absent";
+	
+}	
+ }
+</script>
+<body style="background-color:black;">
+<p>
+<h1 style="color:yellow;font-size:50px;">Galactose test</h1>
+</p>
+<p style="color:yellow; background-color:black; background:url(bgp2.png); background-size:650px; background-position:center; font-size:25px;">
+Mollisch test
+<select id="f" style="background-color:violet; margin:5px; position:relative; left:50px">
+<option value="none">none</option>
+<option value="positive">Positive</option>
+<option value="negative">Negative</option>
+</select>
+<br><br>   Iodine test
+<select id="r" style="background-color:violet; margin:5px; position:relative; left:75px">
+<option value="none">none</option>
+<option value="positive">Positive</option>
+<option value="negative">Negative</option>
+</select>
+<br><br> Benidict test
+<select id="n" style="background-color:violet; margin:5px; position:relative; left:50px">
+<option value="none">none</option>
+<option value="positive">Positive</option>
+<option value="negative">Negative</option>
+</select>
+<br><br> Fehling's test
+<select id="h" style="background-color:violet; margin:5px; position:relative; left:47px">
+<option value="none">none</option>
+<option value="positive">Positive</option>
+<option value="negative">Negative</option>
+</select>
+<br><br> Barfoed'a test
+<select id="e" style="background-color:violet; margin:5px; position:relative; left:40px">
+<option value="none">none</option>
+<option value="positive">Positive</option>
+<option value="negative">Negative</option>
+</select>
+<br><br> Seliwanoff's test
+<select id="d" style="background-color:violet; margin:5px; position:relative; left:15px">
+<option value="none">none</option>
+<option value="positive">Positive</option>
+<option value="negative">Negative</option>
+</select><br><br>
+<button style="background-color:red; padding:10px; width:100px; position:relative; left:400px; bottom:300px;" onMouseOver="this.style.backgroundColor='yellow'" onMouseOut="this.style.backgroundColor='red'" onclick="myf()">Submit</button>
+
+
+</body>
+</p>
+<p id="t" style="position:relative; left:600px; bottom:450px; color:yellow;  font-size:50;">
+</p>
+
+</html>
+
